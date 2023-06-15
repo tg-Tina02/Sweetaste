@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    img{
+        display: block;
+        height: 40px;
+    }
+    ul{
+        display: flex;
+        margin-left: auto;
+        li{
+            margin:0 30px;
+        }
+        a{
+            // @include font-style($Green,16px,1.2,900);
+            @include font-style($Green,16px,1.2,600);
+        }
+    }
+}
+.cart{
+    display:block;
+    margin-left: 49px;
+}
+.cart-icon{
+    width: 24px;
+    height: auto;
+}

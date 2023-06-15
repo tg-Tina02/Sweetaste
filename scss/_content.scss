@@ -1,0 +1,112 @@
+.content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+aside{
+    width: 33%;
+    flex-shrink: 0;
+    h2{
+        @include font-style($Green-light,24px,1.2,600);
+        background: $Green;
+        padding: 16px 102px;
+        text-align: center;
+    }
+    ul{
+        border: 1px solid $Green-light;
+    }
+    li{
+        border-top: 1px solid $Green-light;
+        &:hover{
+            background: #eaf0ed35;
+        }
+    }
+    .active{
+        background: $Green-light;
+    }
+    a{
+        display: block;
+        padding: 16px 66px;
+        @include font-style($Green,24px,1.2,600);
+        text-align: center;
+    }
+}
+.dessert{
+    margin-left: 20px;
+    ul{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li{
+        position: relative;
+        margin-bottom: 20px;
+        &::before{
+            content: "本日精選";
+            @include font-style($Green-light,16px,1.2,600);
+            width: 36px;
+            background: $Green;
+            padding: 10px;
+            position: absolute;
+            margin-left: 20px;
+        }
+        .heart{
+            display: block;
+            position: absolute;
+            top:19px;
+            right: 22px;
+
+            .material-symbols-outlined{
+                color: rgb(232, 4, 4);
+                text-shadow: 1px 1px 2px black;
+                display: none;
+                right: 20px;
+            }
+            .d-none {
+                display: none;
+              }
+            .d-block {
+                display: block;
+            }
+            .show {
+                display: block;
+            }
+        }
+        img{
+            display: block;
+        }
+    }
+    .today-label{
+        display:block;
+        @include font-style($Green-light,16px,1.2,600);
+        width: 36px;
+        background: $Green;
+        padding: 10px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    .info{
+        display:flex;
+    }
+    .name{
+        @include font-style($Green,20px,1.2,300);
+        text-align: center;
+        padding: 14px 0px;
+        border: 1px solid $Green-light;
+        flex-grow: 1.5;
+    }
+    .price{
+        @include font-style($Green,20px,1.2,600);
+        text-align: center;
+        padding: 14px 0px;
+        border: 1px solid $Green-light;
+        flex-grow: 1;
+    }
+    .add-btn{
+        display: block;
+        padding: 16px 90px;
+        text-align: center;
+        @include font-style($Green,24px,1.2,600);
+        background: $Green-light;
+    }
+}

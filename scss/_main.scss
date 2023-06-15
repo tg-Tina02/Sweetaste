@@ -1,0 +1,19 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    // outline: 1px solid red;
+    color: $Green;
+}
+header{
+    img{
+        display: block;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

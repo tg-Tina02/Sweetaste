@@ -1,0 +1,7 @@
+
+@mixin font-style($font-color:#000,$fsz:16px,$line-height:1.5,$fw:400) {
+    color: $font-color;
+    font-size: $fsz;
+    line-height: $line-height;
+    font-weight:$fw;
+};
