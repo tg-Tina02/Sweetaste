@@ -116,6 +116,8 @@ aside{
             border-left: 1px solid $Green-light;
         }
         li{
+            border-top: 1px solid $Green-light;
+            border-bottom: 1px solid $Green-light;
             border-right: 1px solid $Green-light;
             &:hover{
                 background: $Green-very-light;

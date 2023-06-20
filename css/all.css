@@ -245,6 +245,8 @@ aside a {
   border-left: 1px solid #EAF0ED;
 }
 .dessert .paging li {
+  border-top: 1px solid #EAF0ED;
+  border-bottom: 1px solid #EAF0ED;
   border-right: 1px solid #EAF0ED;
 }
 .dessert .paging li:hover {
