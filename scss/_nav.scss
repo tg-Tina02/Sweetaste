@@ -1,11 +1,7 @@
 nav{
     display: flex;
-    padding: 40px 0;
     align-items: center;
-    img{
-        display: block;
-        height: 40px;
-    }
+    padding: 40px 0;
     ul{
         display: flex;
         margin-left: auto;
@@ -13,9 +9,27 @@ nav{
             margin:0 30px;
         }
         a{
-            // @include font-style($Green,16px,1.2,900);
             @include font-style($Green,16px,1.2,600);
+            &:hover{
+                background: $Green-light;
+            }
         }
+    }
+}
+.logo{
+    a{
+        display: block;
+        width: 215px;
+        height: 40px;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-color: orange;
+
+        //把文字推出h1之外，藏起來
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 .cart{

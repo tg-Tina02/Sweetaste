@@ -1,5 +1,6 @@
 .content{
     margin-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -18,7 +19,7 @@ aside{
     li{
         border-top: 1px solid $Green-light;
         &:hover{
-            background: #eaf0ed35;
+            background: $Green-very-light;
         }
     }
     .active{
@@ -33,47 +34,22 @@ aside{
 }
 .dessert{
     margin-left: 20px;
-    ul{
+    .dessert-card-group{
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-    li{
-        position: relative;
-        margin-bottom: 20px;
-        &::before{
-            content: "本日精選";
-            @include font-style($Green-light,16px,1.2,600);
-            width: 36px;
-            background: $Green;
-            padding: 10px;
-            position: absolute;
-            margin-left: 20px;
-        }
-        .heart{
-            display: block;
-            position: absolute;
-            top:19px;
-            right: 22px;
-
-            .material-symbols-outlined{
-                color: rgb(232, 4, 4);
-                text-shadow: 1px 1px 2px black;
-                display: none;
-                right: 20px;
-            }
-            .d-none {
-                display: none;
-              }
-            .d-block {
-                display: block;
-            }
-            .show {
-                display: block;
-            }
-        }
-        img{
-            display: block;
+        li{
+            position: relative;
+            margin-bottom: 20px;
+            // &::before{
+            //     content: "本日精選";
+            //     @include font-style($Green-light,16px,1.2,600);
+            //     width: 36px;
+            //     background: $Green;
+            //     padding: 10px;
+            //     position: absolute;
+            //     margin-left: 20px;
+            // }
         }
     }
     .today-label{
@@ -85,21 +61,42 @@ aside{
         position: absolute;
         margin-left: 20px;
     }
+    .heart{
+        display: block;
+        position: absolute;
+        top:19px;
+        right: 22px;
+        .material-symbols-sharp{
+            color: rgb(232, 4, 4);
+            font-size: 20px;
+            text-shadow: 1px 1px 2px black;
+            display: none;
+        }
+        .d-none {
+            display: none;
+          }
+        .show {
+            display: block;
+        }
+    }
+    img{
+        display: block;
+    }
     .info{
         display:flex;
+        border: 1px solid $Green-light;
     }
     .name{
         @include font-style($Green,20px,1.2,300);
         text-align: center;
         padding: 14px 0px;
-        border: 1px solid $Green-light;
+        border-right: 1px solid $Green-light;
         flex-grow: 1.5;
     }
     .price{
         @include font-style($Green,20px,1.2,600);
         text-align: center;
         padding: 14px 0px;
-        border: 1px solid $Green-light;
         flex-grow: 1;
     }
     .add-btn{
@@ -108,5 +105,38 @@ aside{
         text-align: center;
         @include font-style($Green,24px,1.2,600);
         background: $Green-light;
+    }
+
+    //分頁
+    .paging{
+        display: flex;
+        margin-top: 10px;
+        li:first-child{
+            margin-left: auto;
+            border-left: 1px solid $Green-light;
+        }
+        li{
+            border-right: 1px solid $Green-light;
+            &:hover{
+                background: $Green-very-light;
+            }
+        }
+        a{
+            display: block;
+            @include font-style($Green,20px,1.2,300);
+            // padding: 16px 24px;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            span{
+                vertical-align: middle;
+            }
+        }
+        .active{
+            background: $Green;
+            color: #fff ;
+            font-weight: bold;
+        }
     }
 }
