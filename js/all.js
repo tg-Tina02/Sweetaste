@@ -43,7 +43,7 @@ $(document).ready(function() {
     $('.heart').click(function(e) {
         //裡面的 .heart-normal 會消失
         $(this).find('.heart-normal').toggleClass('d-none');
-        //裡面的 .material-symbols-outlined 會出現
+        //裡面的 .material-symbols-sharp 會出現
         $(this).find('.material-symbols-sharp').toggleClass('show');
     });
 

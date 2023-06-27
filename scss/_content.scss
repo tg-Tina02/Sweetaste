@@ -71,6 +71,11 @@ aside{
             font-size: 20px;
             text-shadow: 1px 1px 2px black;
             display: none;
+            font-variation-settings: 
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48;
         }
         .d-none {
             display: none;
@@ -126,8 +131,8 @@ aside{
         a{
             display: block;
             @include font-style($Green,20px,1.2,300);
-            // padding: 16px 24px;
-            width: 60px;
+            // width: 60px;
+            min-width: 60px;
             height: 60px;
             text-align: center;
             line-height: 60px;
